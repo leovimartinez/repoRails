@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PrimeraApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+	<ul>
+		<li><%= link_to "HOME", root_path%></li>
+		<li><%= link_to "x", generates_x_path %></li>
+		<li><%= link_to "y", generates_y_path %></li>
+		<li><%= link_to "z", generates_z_path%></li>
+	</ul>
+<%= yield %>
+
+</body>
+</html>
